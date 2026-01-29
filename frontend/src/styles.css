@@ -1,0 +1,154 @@
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+}
+
+.card {
+  background: #fff;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+.section-title,
+.form-title {
+  color: #2c3e50;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+
+.employee-form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #34495e;
+}
+
+.form-group input,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccd1d9;
+  transition: .2s;
+}
+
+.form-group input:focus,
+select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52,152,219,.2);
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-primary:hover { background: #2980b9; }
+
+.btn-secondary {
+  padding: 12px;
+  border: 1px solid #3498db;
+  background: #fff;
+  color: #3498db;
+}
+
+.btn-secondary:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-danger {
+  padding: 6px 10px;
+  font-size: 13px;
+  border: none;
+  background: #e74c3c;
+  color: #fff;
+}
+
+.btn-danger:hover { background: #c0392b; }
+
+
+.employee-list,
+.attendance {
+  margin-top: 30px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.employee-table,
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.employee-table th,
+.employee-table td,
+.attendance-table th,
+.attendance-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.employee-table thead,
+.attendance-table th {
+  background: #f0f3f6;
+  font-weight: 600;
+}
+
+.employee-table tbody tr:hover {
+  background: #f9fbfc;
+}
+
+
+.attendance-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.attendance-actions {
+  grid-column: span 3;
+  display: flex;
+  gap: 12px;
+}
+
+.status-present { color: #27ae60; font-weight: 600; }
+.status-absent { color: #e74c3c; font-weight: 600; }
+
